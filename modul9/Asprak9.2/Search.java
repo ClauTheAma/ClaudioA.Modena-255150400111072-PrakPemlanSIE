@@ -41,6 +41,8 @@ public class Search {
             49, 87, 24, 60, 33, 9, 97, 41, 88, 17, 52,
             79, 4, 38, 94, 21, 71, 10, 56};
 
+            Arrays.sort(data); 
+
             int hasil = linearSearch(data, 88);
             System.out.println("Hasil linear search (88): " + hasil);
 
@@ -53,11 +55,5 @@ public class Search {
             int hasil4 = binarySearch(data, 81);
             System.out.println("Hasil binary search (81): " + hasil4);
 
-            Arrays.sort(data); 
-        System.out.println("Data setelah diurutkan: " + Arrays.toString(data));
-
-        // 3. Binary Search (Sekarang pasti ketemu!)
-        System.out.println("Hasil binary search (88): " + binarySearch(data, 88));
-        System.out.println("Hasil binary search (81): " + binarySearch(data, 81));
     }
 }
